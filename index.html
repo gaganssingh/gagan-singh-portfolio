@@ -10,35 +10,72 @@
 </head>
 <body>
     <header>
-       <p class="logo">logo goes here</p>
-        <nav role="navigation">
-            <p>Navigation section for large screens</p>
+        <div class="logo logo-small"><a href="index.html"><img src="assets/logo-white.png" alt="gagan singh logo"></a></div>
+        <div class="logo logo-large"><a href="index.html"><img src="assets/logo-white@2x.png" alt="gagan singh logo"></a></div>
+        <nav role="navigation" class="header-navigation">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
         </nav>
     </header>
     <main role="main">
-        <section>
+        <section class="main-section" id="about">
             <div class="main-image">
-            <p>hero image</p>
+                <img src="assets/photo_A2_Ellipse_2_pattern.png" alt="picture of gagan singh">
             </div>
 
             <div class="main-body">
-                <p>about section with hero text</p>
+                <h1>about</h1>
+                <ul class="hero-text">
+                    <li>Full Stack Developer</li>
+                    <li>Project Manager</li>
+                    <li>Manuf. Engineer</li>
+                    <li>Tech Enthusiast</li>
+                </ul>
+                <p>My name is Gagan and I am a Full Stack Developer from Kitchener, ON. I enjoy problem-solving via creative ideation and implementation of user-first designs.</p>
+                <p>With over 8 years of experience in the manufacturing industry as an engineer &amp; a project manager, and management of manufacturing projects up to $35 million spanning 3 industries under my belt, I bring critical thinking and stakeholder focused decision making to the table.</p>
             </div>
         </section>
         
-        <section>
-            <p>work section with project example</p>
+        <section id="work" class="work">
+            <h2>work</h2>
+                <div class="work-box">
+                    <h3 class="work-title">Quiz App</h3>
+                    <p>A jQuery quiz app made as part of bloc.io's first capstone application. It contains of 7 multiple choice questions on the new seven wonders of the world, where the user gets feedback on each question along with their score at the end.</p>
+                    <p class="stack">HTML, CSS &amp; jQuery</p>
+                    <div class="work-info">
+                        <img src="assets/jquery-app.png" alt="jquery quiz app">
+                        <div class="work-links">
+                            <button onclick="window.location.href='https://gaganssingh.github.io/seven-wonders-quiz/';" target="_blank">Live Page</button>
+                            <button onclick="window.location.href='https://github.com/gaganssingh/seven-wonders-quiz';" target="_blank">Source Code</button>
+                        </div>
+                    </div>
+                </div>
         </section>
         
-        <section>
-            <p>contact section</p>                   
+        <section id="contact" class="contact">
+            <div class="contact-box">
+                    <h2>contact</h2>
+                    <div class="contact-info">                        
+                        <p><a href="https://github.com/gaganssingh" target="_blank">github</a></p>
+                        <p><a href="https://www.linkedin.com/in/gssingh/" target="_blank">linkedIn</a></p>
+                        <p><a href="tel:+16479754206">+1-647-975-4206</a></p>
+                        <p><a href="mailto:gagansingh.dev@outlook.com">gagansingh.dev@outlook.com</a></p>
+                    </div>
+                </div>
         </section>
     </main>
 
     <footer role="navigation">
-            <nav>
-                <p>Fixed navigation section for screens less than 768px</p>
-            </nav>
+            <nav role="navigation" class="footer-navigation">
+                    <ul>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
     </footer>
 </body>
 </html>
